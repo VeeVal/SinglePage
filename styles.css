@@ -103,7 +103,7 @@ body {
 }
 .btntp {
     display: inline;
-    margin: 0 10px 0 10px;
+    margin: 5px 10px;
 }
 .btn-panel {
     margin: 5% 0 0 0px;
@@ -136,7 +136,7 @@ body {
     display: flex;
 }
 #experience-cards {
-    padding: 20% 0 0 0;
+    padding: 10% 0 0 0;
 }
 #socials {
     height: 100vh;
