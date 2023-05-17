@@ -1,0 +1,157 @@
+@font-face {
+    font-family: isans;
+    src: url(fonts/IRANSansWeb_UltraLight.woff2);
+}
+/* hide scrollbar but allow scrolling */
+/* element {
+    -ms-overflow-style: none; 
+    scrollbar-width: none; 
+    overflow-y: scroll; 
+}
+
+element::-webkit-scrollbar {
+    display: none; 
+}
+body::-webkit-scrollbar{
+    display: none;
+} */
+body {
+    font-family: isans;
+    direction: rtl;
+    text-align: right;
+    height: 100%;
+    background-color:rgb(224, 224, 224);
+    overflow: hidden;
+}
+
+
+#header {
+    padding: 10px;
+    height: 100vh;
+    justify-content: center;
+    display: flex;
+}
+#header .row {
+    margin: auto;
+}
+.scroll-down {
+    height: 50px;
+    width: 30px;
+    border: 2px solid black;
+    position: absolute;
+    left: 50%;
+    bottom: 20px;
+    border-radius: 50px;
+    cursor: pointer;
+  }
+  .scroll-down::before,
+  .scroll-down::after {
+    content: "";
+    position: absolute;
+    top: 20%;
+    left: 50%;
+    height: 10px;
+    width: 10px;
+    transform: translate(-50%, -100%) rotate(45deg);
+    border: 2px solid black;
+    border-top: transparent;
+    border-left: transparent;
+    animation: scroll-down 1s ease-in-out infinite;
+  }
+  .scroll-down::before {
+    top: 30%;
+    animation-delay: 0.3s;
+    /* animation: scroll-down 1s ease-in-out infinite; */
+  }
+  .scroll-down > span {
+    position: relative;
+    bottom: 30px;
+    left: 3px;
+    color: #8f8f8f;
+  }
+  @keyframes scroll-down {
+    0% {
+      /* top:20%; */
+      opacity: 0;
+    }
+    30% {
+      opacity: 1;
+    }
+    60% {
+      opacity: 1;
+    }
+    100% {
+      top: 90%;
+      opacity: 0;
+    }
+  }
+  
+.divider {
+    margin: 50px 0 50px 0;
+    width: 100%;
+    height: 2px;
+    background: #8b8b8b;
+
+}
+#page {
+    height: 100vh;
+    justify-content: center;
+    display: flex;
+}
+#page .row {
+    margin: auto;
+}
+.btntp {
+    display: inline;
+    margin: 0 10px 0 10px;
+}
+.btn-panel {
+    margin: 5% 0 0 0px;
+}
+.btn-panel > a {
+    text-decoration: none;
+}
+
+#bio {
+    height: 100vh;
+}
+#bio-cards {
+    padding: 20% 0 0 0;
+}
+.bio-card {
+    padding: 20px 0 20px 0;
+}
+.movie-span {
+    padding: 20px 0 20px 0;
+}
+
+.movie-card > ul li::marker {
+    content: "";
+}
+
+
+#experiences {
+    height: 100vh;
+    justify-content: center;
+    display: flex;
+}
+#experience-cards {
+    padding: 20% 0 0 0;
+}
+#socials {
+    height: 100vh;
+    justify-content: center;
+    display: flex;
+}
+#social-cards {
+    padding: 20% 0 0 0;
+}
+
+.tel a {
+    color: #269ddb;
+    text-decoration: none;
+}
+.insta a{
+    color: #e84858;
+    text-decoration: none;
+}
